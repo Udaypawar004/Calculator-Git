@@ -12,6 +12,7 @@ public class Calculator{
 		System.out.println("Choose an option");
 		System.out.println("1. Addition");
 		System.out.println("2. Subtraction");
+		System.out.println("3. Multiplication");
 		double result;
 		int option = sc.nextInt();
 		switch(option){
@@ -20,6 +21,9 @@ public class Calculator{
 			        break;
 			case 2: result= subtraction(num1, num2);
 			        System.out.println("The Subtraction is: " + result);
+			        break;
+			case 3: result= multiplication(num1, num2);
+			        System.out.println("The multiplication is: " + result);
 			        break;
 			default: System.out.println("Invalid option.");
 		}
@@ -31,5 +35,8 @@ public class Calculator{
 	}
 	public static double subtraction(double num1, double num2) {
 		return num1 - num2;
+	}
+	public static double multiplication(double num1, double num2){
+	  return num1 * num2;
 	}
 }
